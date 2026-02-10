@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimmiki – Grand Opening</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: #000;
+      color: #f5d27a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #000;
+      border: 2px solid #f5d27a;
+      border-radius: 20px;
+      padding: 40px 20px;
+      box-shadow: 0 0 40px rgba(245, 210, 122, 0.3);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #e8c96a;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    .date {
+      font-size: 18px;
+      margin: 15px 0 25px;
+    }
+
+    .address {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .phone {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      background: #f5d27a;
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #caa94f;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      .title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Jimmiki</h1>
+    <div class="tagline">Elegance Made Affordable</div>
+
+    <div class="title">Bridal Rentals & Fancy</div>
+
+    <div class="date">
+      <strong>Grand Opening</strong><br />
+      11:00 AM, Thursday, February 12, 2026
+    </div>
+
+    <div class="address">
+      1st Floor, Cherakkalayil Building<br />
+      Pallikkara, Kunnathunad
+    </div>
+
+    <div class="phone">📞 +91 8921672952</div>
+    <div class="phone">Jisha: 8593806249 | Nikitha: 8129950280</div>
+
+    <a class="btn" href="https://maps.google.com" target="_blank">View Location</a>
+
+    <footer>© 2026 Jimmiki Bridal Rentals</footer>
+  </div>
+</body>
+</html>
