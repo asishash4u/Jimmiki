@@ -48,8 +48,8 @@
     }
 
 
-/* Confetti canvas full screen */
-#confetti {
+/* Sparkle container */
+.sparkles {
   position: fixed;
   top: 0;
   left: 0;
@@ -59,38 +59,33 @@
   z-index: 5;
 }
 
-/* Sparkle particles */
-.sparkles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 4;
-}
-
+/* Single sparkle particle */
 .sparkle {
   position: absolute;
   width: 6px;
   height: 6px;
   background: gold;
   border-radius: 50%;
-  box-shadow: 0 0 10px gold;
-  animation: sparkleFloat 6s linear infinite;
+  box-shadow: 0 0 12px gold, 0 0 20px rgba(255, 215, 0, 0.6);
+  animation: sparkleFloat linear infinite;
+  opacity: 0;
 }
 
+/* Floating animation */
 @keyframes sparkleFloat {
-  from {
-    transform: translateY(100vh) scale(0.5);
+  0% {
+    transform: translateY(100vh) scale(0.4);
     opacity: 0;
   }
-  20% { opacity: 1; }
-  to {
+  20% {
+    opacity: 1;
+  }
+  100% {
     transform: translateY(-10vh) scale(1);
     opacity: 0;
   }
 }
+
 
 
 
