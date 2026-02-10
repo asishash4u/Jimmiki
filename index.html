@@ -151,5 +151,19 @@ Jimmiki Bridal Rentals</title>
   © 2026 Jimmiki Bridal Rentals
 </footer>
  </div>
+
+   <script>
+    // Create floating sparkles
+    for (let i = 0; i < 25; i++) {
+      const s = document.createElement('div');
+      s.className = 'sparkle';
+      s.style.left = Math.random() * 100 + 'vw';
+      s.style.bottom = '-10px';
+      s.style.animationDuration = (6 + Math.random() * 6) + 's';
+      s.style.opacity = Math.random();
+      document.body.appendChild(s);
+    }
+  </script>
+  
 </body>
 </html>
